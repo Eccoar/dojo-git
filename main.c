@@ -6,6 +6,10 @@ void subtracao(){}
 
 void multiplicacao(){}
 
+void divisao(){}
+
+void fibonacci(){}
+
 int main() {
     int operacao = 1;
     while(operacao != 0) {
