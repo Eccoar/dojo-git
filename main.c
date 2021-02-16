@@ -1,8 +1,22 @@
 #include <stdio.h>
 
-void soma(){}
+void soma() {}
 
-void subtracao(){}
+void subtracao()
+{
+    float term_a, term_b;
+    float subtraction;
+
+    prinftf("Descreva o Primeiro termo da subtração:\n");
+    scanf("%f", &term_a);
+
+    prinftf("Descreva o Segundo termo da subtração:\n");
+    scanf("%f", &term_b);
+
+    subtraction = term_a - term_b;
+
+    prinftf("O resultado da subtração é: %.2f\n\n", subtraction);
+}
 
 void multiplicacao()
 {
@@ -20,13 +34,15 @@ void multiplicacao()
     printf("O produto resultante é: %.2f\n\n", product);
 }
 
-void divisao(){}
+void divisao() {}
 
-void fibonacci(){}
+void fibonacci() {}
 
-int main() {
+int main()
+{
     int operacao = 1;
-    while(operacao != 0) {
+    while (operacao != 0)
+    {
         printf("---------------Bem Vindo a Calculadora Czao!---------------\n\n");
         printf("Digite uma operacao:\n");
         printf("Digite 1, se quiser somar\n");
@@ -36,28 +52,29 @@ int main() {
         printf("Digite 5, se quiser calcular fibonacci:\n");
         printf("Para sair, digite 0\n");
         scanf("%d", &operacao);
-        switch (operacao) {
-            case 1:
-                soma();
-                break;
-            case 2:
-                subtracao();
-                break;
-            case 3:
-                multiplicacao();
-                break;
-            case 4:
-                divisao();
-                break;
-            case 5:
-                fibonacci();
-                break;
-            case 0:
-                printf("exit!\n");
-                break;
-            default:
-                printf("Operacao Invalida\n");
-                break;
+        switch (operacao)
+        {
+        case 1:
+            soma();
+            break;
+        case 2:
+            subtracao();
+            break;
+        case 3:
+            multiplicacao();
+            break;
+        case 4:
+            divisao();
+            break;
+        case 5:
+            fibonacci();
+            break;
+        case 0:
+            printf("exit!\n");
+            break;
+        default:
+            printf("Operacao Invalida\n");
+            break;
         }
     }
 }
