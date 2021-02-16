@@ -1,6 +1,15 @@
 #include <stdio.h>
 
-void soma(){}
+void soma(){
+    float number1, number2;
+
+    printf("Me diga um número:\n");
+    scanf("%f", &number1);
+    printf("Me diga outro número:\n");
+    scanf("%f", &number2);
+
+    printf("A soma de %.2f mais %.2f é igual a: %.2f\n\n", number1, number2, number1+number2);
+}
 
 void subtracao(){}
 
