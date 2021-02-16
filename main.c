@@ -4,7 +4,21 @@ void soma(){}
 
 void subtracao(){}
 
-void multiplicacao(){}
+void multiplicacao()
+{
+    float factor_a, factor_b;
+    float product;
+
+    printf("Descreva o Primeiro fator da multiplicação:\n");
+    scanf("%f", &factor_a);
+
+    printf("Descreva o Segundo fator da multiplicação:\n");
+    scanf("%f", &factor_b);
+
+    product = factor_a * factor_b;
+
+    printf("O produto resultante é: %.2f\n\n", product);
+}
 
 void divisao(){}
 
